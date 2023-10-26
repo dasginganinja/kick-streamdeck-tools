@@ -1,0 +1,40 @@
+{
+	"SDKVersion": 2,
+	"Author": "2Beer",
+	"CodePath": "app.html",
+	"Description": "Streamer Tools for Kick.com",
+	"Name": "Kick Streamdeck Tools",
+	"Icon": "actions/template/assets/action",
+	"URL": "https://2beerminimum.com",
+	"Version": "1.0.0",
+	"Software": {
+		"MinimumVersion": "5.0"
+	},
+	"OS": [
+		{
+			"Platform": "mac",
+			"MinimumVersion": "10.11"
+		},
+		{
+			"Platform": "windows",
+			"MinimumVersion": "10"
+		}
+	],
+	"Category": "Kick Tools",
+	"CategoryIcon": "actions/template/assets/actionimage",
+	"Actions": [
+		{
+			"Icon": "actions/template/assets/actionimage",
+			"Name": "Viewer Count",
+			"Controllers": ["Keypad"],
+			"States": [
+				{
+					"Image": "actions/template/assets/action"
+				}
+			],
+			"Tooltip": "Show viewer count for kick.com on your key",
+			"UUID": "com.2beerminimum.kick-streamdeck-tools.action",
+			"PropertyInspectorPath": "actions/template/property-inspector/inspector.html"
+		}
+	]
+}

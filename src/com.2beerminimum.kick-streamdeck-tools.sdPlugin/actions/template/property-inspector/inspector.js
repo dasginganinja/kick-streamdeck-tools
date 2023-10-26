@@ -2,6 +2,7 @@
 /// <reference path="../../../libs/js/utils.js" />
 
 $PI.onConnected((jsn) => {
+    console.log('you fucked up');
     const form = document.querySelector('#property-inspector');
     const {actionInfo, appInfo, connection, messageType, port, uuid} = jsn;
     const {payload, context} = actionInfo;
@@ -16,6 +17,7 @@ $PI.onConnected((jsn) => {
             $PI.setSettings(value);
         })
     );
+    console.log('we connnected');
 });
 
 $PI.onDidReceiveGlobalSettings(({payload}) => {
